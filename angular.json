@@ -39,12 +39,15 @@
             "assets": [],
             "index": "src/index.html",
             "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "outputPath": "dist/demo",
             "scripts": [],
             "styles": [
               "src/global_styles.css"
             ],
-            "tsConfig": "src/tsconfig.app.json"
+            "tsConfig": "tsconfig.app.json"
           }
         },
         "extract-i18n": {
@@ -60,8 +63,8 @@
               "**/node_modules/**"
             ],
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json"
             ]
           }
         },
@@ -86,12 +89,14 @@
             ],
             "karmaConfig": "src/karma.conf.js",
             "main": "src/test.ts",
-            "polyfills": [],
+            "polyfills": [
+              "zone.js"
+            ],
             "scripts": [],
             "styles": [
               "styles.css"
             ],
-            "tsConfig": "src/tsconfig.spec.json"
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       },
