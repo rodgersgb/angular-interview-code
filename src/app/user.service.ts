@@ -19,7 +19,7 @@ export class UserService {
   }
 
   authenticate(userNameOrEmail: string, password: string): Observable<boolean> {
-    throw new Error('not implemented');
+    return of(USERS.some(user => user.username == userNameOrEmail && user.password == password))
   }
 }
 
